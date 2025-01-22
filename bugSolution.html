@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Correct placement of the script. Or use the DOMContentLoaded event.
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("myDiv").style.display = "none";
+    });
+  </script>
+</body>
+</html>
